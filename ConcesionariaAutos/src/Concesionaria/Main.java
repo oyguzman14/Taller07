@@ -6,18 +6,19 @@ public class Main {
 		System.out.println("Auto 1: ");
 		VehiculoDirector sail= new VehiculoDirector(new SailBuilder());
 		sail.VehiculoBuider();
-		Auto v1=picanto.getAuto();
+		
+		Auto a1=picanto.getAuto();
 		System.out.println(v1+"\n");
 		//picanto
 		VehiculoDirector picanto= new VehiculoDirector(new PicantoBuilder());
 		picanto.VehiculoBuider();
-		Auto v2=picanto.getAuto();
+		Auto a2=picanto.getAuto();
 		System.out.println(v2+"\n");
 		System.out.println("Auto 1: ");
 		// Sparkt	
-		VehiculoDirector dmax= new VehiculoDirector(new ChevroletDmax());
-		dmax.getAuto();
-		Auto v3=dmax.getVehiculo();
+		VehiculoDirector spart= new VehiculoDirector(new SparktBuilder());
+		spart.getAuto();
+		Auto a3=dmax.getVehiculo();
 		System.out.println(v3+"\n");
 		System.out.println("Auto 1: ");
 	}
