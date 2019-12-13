@@ -30,5 +30,10 @@ public class Almacenamiento {
     public void setUnidMedida(String unidMedida) {
         this.unidMedida = unidMedida;
     }
+	@Override
+	public String toString() {
+		
+		return capacidad +" "+unidMedida;
+	}
 }
 
